@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,80 +7,133 @@
         <title>صفحه اصلی</title>
     </head>
     <body>
-        <header
-            class="mx-auto my-6 flex w-full max-w-7xl items-center justify-between"
-        >
-            <section class="flex items-center justify-center gap-4">
-                <a
-                    href="#"
-                    class="relative flex items-center justify-center bg-[#f5f8fc] p-[20px]"
-                >
-                    <img
-                        src="/src/assets/images/shopping_bag.svg"
-                        alt="ایکون کیف خرید"
-                    />
-                    <span
-                        class="absolute -bottom-3 -right-3 flex h-[27px] w-[27px] items-center justify-center rounded-full bg-[#00ADB5] text-lg text-[#fff]"
-                        >2</span
+        <header class="mx-auto max-w-7xl bg-[#fff]">
+            <section class="my-6 flex w-full items-center justify-between">
+                <section class="flex items-center justify-center gap-4">
+                    <a
+                        href="#"
+                        class="relative flex items-center justify-center bg-[#f5f8fc] p-[20px]"
                     >
-                </a>
-                <a href="#" class="relative text-[#626E94]">
-                    <img
-                        src="/src/assets/images/user_circle.svg"
-                        alt="آیکون کاربر"
-                        class="absolute right-4 top-1/3"
-                    />
-                    <p
-                        class="bg-[#F5F8FC] py-[21px] pl-[20px] pr-[45px] placeholder:text-lg"
-                    >
-                        ورود و ثبت نام
-                    </p>
-                </a>
-                <a
-                    href="#"
-                    class="flex items-center justify-center gap-3 bg-[#00ADB5] px-[20px] py-[21px] text-[#F5F8FC]"
-                >
-                    <img
-                        src="/src/assets/images/arrow_circle_left.svg"
-                        alt="ایکون جهت"
-                        class="h-[24px] w-[24px]"
-                    />
-                    <p class="text-lg font-bold">چاپ آنلاین عکس</p>
-                </a>
-            </section>
-            <section class="flex justify-center gap-10">
-                <div class="relative">
-                    <input
-                        type="text"
-                        placeholder="جستوجو در  فروشگاه عکسخونه"
-                        class="bg-[#F5F8FC] py-[21px] pl-[80px] pr-[45px] text-[#7e8aab] placeholder:text-lg"
-                    />
-                    <img
-                        src="/src/assets//images/search.svg"
-                        alt="ایکون جستجو"
-                        class="absolute right-4 top-1/3 h-[24px] w-[24px] text-[#7e8aab]"
-                    />
-                </div>
-                <div class="flex items-center justify-center gap-4">
-                    <div
-                        class="flex flex-col justify-center gap-1 whitespace-nowrap text-right"
-                    >
-                        <h1
-                            class="text-lg font-bold tracking-wider text-[#000000]"
+                        <img
+                            src="/src/assets/images/shopping_bag.svg"
+                            alt="ایکون کیف خرید"
+                        />
+                        <span
+                            class="absolute -bottom-3 -right-3 flex h-[27px] w-[27px] items-center justify-center rounded-full bg-[#00ADB5] text-lg text-[#fff]"
+                            >2</span
                         >
-                            عکسخونه
-                        </h1>
-                        <p class="text-sm tracking-wide text-[#626E94]">
-                            عکس ماندگار، هدیه ای ارزشمند
+                    </a>
+                    <a href="#" class="relative text-[#626E94]">
+                        <img
+                            src="/src/assets/images/user_circle.svg"
+                            alt="آیکون کاربر"
+                            class="absolute right-4 top-1/3"
+                        />
+                        <p
+                            class="bg-[#F5F8FC] py-[21px] pl-[20px] pr-[45px] placeholder:text-lg"
+                        >
+                            ورود و ثبت نام
+                        </p>
+                    </a>
+                    <a
+                        href="#"
+                        class="flex items-center justify-center gap-3 bg-[#00ADB5] px-[20px] py-[21px] text-[#F5F8FC]"
+                    >
+                        <img
+                            src="/src/assets/images/arrow_circle_left.svg"
+                            alt="ایکون جهت"
+                            class="h-[24px] w-[24px]"
+                        />
+                        <p class="text-lg font-bold">چاپ آنلاین عکس</p>
+                    </a>
+                </section>
+                <section class="flex justify-center gap-10">
+                    <div class="relative">
+                        <input
+                            type="text"
+                            placeholder="جستوجو در  فروشگاه عکسخونه"
+                            class="bg-[#F5F8FC] py-[21px] pl-[80px] pr-[45px] text-[#7e8aab] placeholder:text-lg"
+                        />
+                        <img
+                            src="/src/assets//images/search.svg"
+                            alt="ایکون جستجو"
+                            class="absolute right-4 top-1/3 h-[24px] w-[24px] text-[#7e8aab]"
+                        />
+                    </div>
+                    <div class="flex items-center justify-center gap-4">
+                        <div
+                            class="flex flex-col justify-center gap-1 whitespace-nowrap text-right"
+                        >
+                            <h1
+                                class="text-lg font-bold tracking-wider text-[#000000]"
+                            >
+                                عکسخونه
+                            </h1>
+                            <p class="text-sm tracking-wide text-[#626E94]">
+                                عکس ماندگار، هدیه ای ارزشمند
+                            </p>
+                        </div>
+                        <img
+                            src="/src/assets/images/logo.svg"
+                            alt="لوگوی سایت"
+                        />
+                    </div>
+                </section>
+            </section>
+            <hr class="my-[30px] h-[0.6px] rounded border-0 bg-[#DEE2EE]" />
+
+            <nav class="flex w-full items-center justify-between gap-10">
+                <section class="flex items-center justify-center gap-3">
+                    <div class="flex flex-col justify-center gap-1 text-right">
+                        <p class="text-sm text-[#7E8AAB]">شماره تماس</p>
+                        <p class="text[#050F2C] text-lg font-bold">
+                            02136160800
                         </p>
                     </div>
-                    <img src="/src/assets/images/logo.svg" alt="لوگوی سایت" />
-                </div>
-            </section>
+                    <img
+                        src="/src/assets/images/phone_call.svg"
+                        alt="عکس تلفن تماس"
+                        class="h-[41px] w-[41px]"
+                    />
+                </section>
+                <section class="flex items-center justify-center gap-12">
+                    <p class="text-lg text-[#626E94]">شاسی ها</p>
+                    <p class="text-lg text-[#626E94]">تابلو ها</p>
+                    <p class="text-lg text-[#626E94]">تماس با ما</p>
+                    <p class="text-lg text-[#626E94]">درباره ما</p>
+                    <div class="flex items-center justify-center gap-2">
+                        <p class="text-lg text-[#050F2C]">هدیه بدهید</p>
+                        <img
+                            src="/src/assets/images/gift.svg"
+                            alt="ایکون هدیه"
+                            class="h-[24px] w-[24px]"
+                        />
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <p class="text-lg text-[#050F2C]">پلن های پیشنهادی</p>
+                        <img
+                            src="/src/assets/images/tag.svg"
+                            alt="ایکون تگ"
+                            class="h-[24px] w-[24px]"
+                        />
+                    </div>
+                    <div
+                        class="relative flex items-center justify-center gap-2"
+                    >
+                        <span
+                            class="absolute -left-4 h-[113px] w-[0.6px] bg-[#dee2ee]"
+                        ></span>
+                        <p class="text-lg text-[#000000]">دسته بندی محصولات</p>
+                        <img
+                            src="/src/assets/images/category.svg"
+                            alt="ایکون دسته بندی"
+                            class="h-[25px] w-[24px]"
+                        />
+                    </div>
+                </section>
+            </nav>
         </header>
-        <hr
-            class="mx-auto my-4 h-0.5 max-w-7xl rounded border-0 bg-[#DEE2EE]"
-        />
+
         <script type="module" src="../assets/js/main.js"></script>
     </body>
 </html>
