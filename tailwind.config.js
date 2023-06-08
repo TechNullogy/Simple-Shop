@@ -5,20 +5,20 @@ export default {
     theme: {
         extend: {
             boxShadow: {
-                "shadow-1": "0px 24px 40px rgba(121, 127, 136, 0.05)",
-                "shadow-2": "0px 14px 24px 10px #7E8AAB1C",
+                subtle: "0 24px 40px #797f880d",
+                hover: "0 14px 24px 10px #7E8AAB1C",
             },
             colors: {
-                "light-purple": "#626E94",
-                "light-blue": "#00ADB5",
-                pink1: "#E11D48",
-                yellow1: "#FF9518",
-                blue1: "#050F2C",
-                grey1: "#f5f8fc",
-                grey2: "#DEE2EE",
-                grey3: "#D2D7E4",
-                grey4: "#BDC5DD",
-                grey5: "#7E8AAB",
+                lynch: "#626E94",
+                "bondi-blue": "#00ADB5",
+                amaranth: "#E11D48",
+                "west-side": "#FF9518",
+                "black-pearl": "#050F2C",
+                "link-water": "#f5f8fc",
+                mystic: "#DEE2EE",
+                geyser: "#D2D7E4",
+                "pigeon-post": "#BDC5DD",
+                "bali-hai": "#7E8AAB",
             },
             spacing: {
                 4.5: "1.125rem",
