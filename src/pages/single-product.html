@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fa">
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Shbnam font -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
+
+    <!-- Apply shabnam font -->
+    <style>
+        body {
+            font-family: 'Shabnam', sans-serif;
+        }
+    </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>جزئیات محصول</title>
-  </head>
-  <body>
+</head>
+<body dir="rtl">
+    
     {{> header}}
 
-    <div>محتوای صفحه</div>
+    
 
     {{> footer}}
+
     <script type="module" src="../assets/js/main.js"></script>
-  </body>
+</body>
 </html>
