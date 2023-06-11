@@ -1,20 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.service-card-gradient-color {
-    background: linear-gradient(
-        90deg,
-        #f5f8fc 60%,
-        rgba(245, 248, 252, 0) 100%
-    );
-    transition: all linear 0.3s;
-}
-
-.service-card-gradient-color:hover {
-    background: linear-gradient(
-        90deg,
-        #dee2ee 60%,
-        rgba(222, 226, 238, 0) 100%
-    );
-}
