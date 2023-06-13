@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Edit</title>
+ 
+  </head>
+  <body>
+    {{> header}}
+    <div class="flex justify-center">
+   <div class="m-10 flex flex-col gap-y-6 rounded bg-[#F5F5F5] p-3 " dir="rtl">
+    <h2 class="w-[249px] h-[36px]  not-italic font-bold text-[20px] leading-[36px]">ویرایش اطلاعات شخصی</h2>
+    <form class="flex flex-col gap-3  bg-[#FFFFFF] h-[528px] w-[986px] ">
+      <div class="grid grid-cols-3 gap-x-6 ">
+        <div class="flex flex-col gap-2">
+          <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16.8px] text-[#7E8AAB] mr-5 mt-5">نام و نام خانوادگی</label>
+          <input type="text" class="w-[230px] h-[50px] bg-[#F7F9FC] text-right mr-5 pr-3" value="علیض">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16 .8px] text-[#7E8AAB] mt-5">شماره موبایل</label>
+          <input type="number" class="w-[230px] h-[50px] bg-[#F7F9FC] text-right pr-3 " value="09152663045">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16 .8px] text-[#7E8AAB] mt-5">آدرس ایمیل</label>
+          <input type="email" class="w-[230px] h-[50px] bg-[#F7F9FC] text-right pr-3 " value="efwabifawafup@gmail.com ">
+        </div>
+      </div>
+  
+      <div class="grid grid-cols-2 gap-x-6">
+        <div class="flex flex-col gap-2">
+          <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16 .8px] text-[#7E8AAB] mt-5 mr-5">استان</label>
+          <input type="text" class="w-[454px] h-[56px] bg-[#F7F9FC] text-right pr-3  mr-5 mt-25 " placeholder="انتخاب کنید">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16 .8px] text-[#7E8AAB] mt-5">شهر</label>
+          <input type="text"  class="w-[454px] h-[56px] bg-[#F7F9FC] text-right pr-3 mt-25" placeholder="نام شهر را وارد کنید" >
+        </div>
+        <div class="grid grid-cols gap-x-6 ">
+          <div class="flex flex-col gap-2">
+            <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16 .8px] text-[#7E8AAB] mr-5 mt-5">کدپستی</label>
+            <input type="number" class="w-[454px] h-[56px] bg-[#F7F9FC] text-right pr-3  mr-5 mt-25 ml-25 " value="2484789461">
+          </div>
+          </div>
+          <div class="grid grid-cols gap-x-6 ">
+          <div class="flex flex-col gap-2">
+            <label class="w-[88px] h-[17px]  not-italic font-light text-[12px] leading-[16 .8px] text-[#7E8AAB] mr-10 mt-5">آدرس</label>
+            <input type="text" class="w-[450-px] h-[56px] bg-[#F7F9FC] text-right pr-3  ml-5 mt-25 " value="ششششششششششششششششصیصش" />
+          </div>
+          </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  
+   
+
+    {{> footer}}
+    <script type="module" src="../assets/js/main.js"></script>
+  </body>
+</html>
