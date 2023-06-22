@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+ 
+  </head>
+  <body>
+    {{> header}}
+    <div>
+      <div class="flex justify-center bg-[#F5F5F5]">
+        <div class="m-10 flex flex-col gap-y-6 rounded  p-3 " dir="rtl"> <!--Personal Information-->
+         <div class="flex flex-col gap-3  bg-[#FFFFFF] h-[419px] w-[986px] ">
+            <h2 class="w-[160px] h-[36px]  not-italic font-bold text-[20px] leading-[36.4px] m-5">اطلاعات شخصی</h2>
+
+            <div class="grid grid-cols-3 gap-x-6 ">
+                <div class="flex flex-col gap-2 relative">
+                    <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] mr-5">نام و نام خانوادگی</span>
+                    <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C] mr-5">علیرضا رودی</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] ">شماره تلفن</span>
+                    <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C] " >09152663045</span>
+                </div>
+                <div class="flex flex-col gap-2 relative ">
+                    <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] ">ایمیل</span>
+                    <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C]  ">ALIREZAER383@GMAIL.COM</span>
+                </div>
+              </div>
+              <div class="grid grid-cols-4 gap-x-6">
+                <div class="flex flex-col gap-2">
+                  <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] mr-5 mt-10">استان</span>
+                  <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C] mr-5">مشهد</span> 
+                </div>
+                <div class="flex flex-col gap-2">
+                  <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] mt-10">شهر</span>
+                  <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C] ">مشهد</span>
+                 </div>
+                 <div class="flex flex-col gap-2">
+                  <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] mt-10">کدپستی</span>
+                  <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C] ">248949487</span>
+                 </div>
+                 <div class="flex flex-col gap-2">
+                  <span class="w-[119px] h-[22px] font-normal text-[16px] leading-[22.4px] text-[#7E8AAB] mt-10">آدرس کامل</span>
+                  <span class="w-[88px] h-[25px] font-bold text-[16px] leading[25.2px] text-[#050F2C] ">- - - - - - </span>
+                 </div>
+                </div>
+                <div class="grid grid-cols  ">
+                  <div class="flex flex-col items-center relative ">
+                    <button type="submit" class="  w-[922px] h-[65px] bg-[#F5F8FC] absolute right-7 top-8  ">
+                      <span class="w-[163px] h-[25px] mt-[17.5px] font-semibold text-[18px] leading-[25.2px] text-[#00ADB5] text-center px-[17px] py-[31px]">ذخیره تغییرات</span>
+                    </button>
+                    <img class=" w-[24] h-[24] absolute top-12 right-80 mr-[90px] mt-[5px] " src="/src/assets/images/pages/ui/edit-circle.png"   alt="profile-image">
+                  </div>
+                  </div>
+           </div>
+           </div> <!--end-->
+           
+          </div>
+          <div class="flex justify-center bg-[#F5F5F5]"> <!--favorits cards-->
+           <div class="m-10 flex flex-col gap-y-3 rounded  p-3 bg-[#FFFFFF] h-[650px] w-[986px] " dir="rtl">
+            <h2 class="w-[249px] h-[36px]  not-italic font-bold text-[20px] leading-[36px] m-5"> لیست آخرین علاقه‌مندی‌ها</h2>
+  <div class="flex flex-col gap-3">
+   
+      <div class="flex flex-col gap-2">
+        <div class="grid grid-cols-3 gap-2 mt-5">
+          <div class=" rounded relative mr-5" >
+            <img class="w-[249px] h-[249px]" src="/src/assets/images/pages/ui/cards-pictures.png"    alt="cards picture">
+            <div >
+              <span class="w-[67px] h-[25px] font-normal text-[16px] leading-[25px] text-[#7E8AAB]">قاب عکس</span>
+              <span class="block  font-semibold text-[20px] leading-[25px] text-[#050F2C] mt-1">قاب عکس شیب‌دار</span>
+              <span class="block font-semibold text-[18px] leading-[25px] text-[#00ADB5] mt-8 ">تومان 68000 - 24000 تومان</span>
+
+            </div>
+            <div class="rounded-full absolute top-0  right-12 mr-[130px] mt-2" >
+              <img src="/src/assets/images/pages/ui/heart-icon.png" alt="heart badges">
+            </div>
+           </div>
+           <div class="rounded relative" >
+            <img  class="w-[249px] h-[249px]" src="/src/assets/images/pages/ui/cards-pictures.png"   alt="cards picture">
+            <div >
+              <span class="w-[67px] h-[25px] font-normal text-[16px] leading-[25px] text-[#7E8AAB]">قاب عکس</span>
+              <span class="block  font-semibold text-[20px] leading-[25px] text-[#050F2C] mt-1">قاب عکس شیب‌دار</span>
+              <span class="block font-semibold text-[18px] leading-[25px] text-[#00ADB5] mt-8 ">تومان 68000 - 24000 تومان</span>            </div>
+            <div class="rounded-full absolute top-0  right-12 mr-[130px] mt-2" >
+            <img src="/src/assets/images/pages/ui/heart-icon.png" alt="heart badges">
+            </div>
+           </div>
+           <div class="rounded relative" >
+            <img  class="w-[249px] h-[249px]" src="/src/assets/images/pages/ui/cards-pictures.png"     alt="cards picture">
+            <div >
+              <span class="w-[67px] h-[25px] font-normal text-[16px] leading-[25px] text-[#7E8AAB]">قاب عکس</span>
+              <span class="block  font-semibold text-[20px] leading-[25px] text-[#050F2C] mt-1">قاب عکس شیب‌دار</span>
+              <span class="block font-semibold text-[18px] leading-[25px] text-[#00ADB5] mt-8 ">تومان 68000 - 24000 تومان</span>
+            </div>
+            <div class="rounded-full absolute top-0  right-12 mr-[130px] mt-2" >
+              <img src="/src/assets/images/pages/ui/heart-icon.png" alt="heart badges">
+            </div>
+           </div>
+        </div>
+        <div class="grid grid-cols mt-5 ">
+                  <div class="flex flex-col items-center relative ">
+                    <button type="submit" class="  w-[921px] h-[60px]  bg-[#F5F8FC] absolute right-7 top-8  ">
+                      <span class="w-[101px] h-[25px] mt-[17.5px] ml-[32px] font-normal text-[18px] leading-[25.2px] text-[#050F2C] text-center">مشاهده بیشتر </span>
+                    </button>
+                    <img class=" w-[24] h-[24] absolute top-12 right-80 mr-[210px] mt-[6px] " src="/src/assets/images/pages/ui/arrow-left.png"   alt="profile-image">
+                  </div>
+                  </div>
+       </div>
+       
+       </div>       
+       </div> 
+
+          </div>
+          
+       </div>
+       <div class="flex justify-center bg-[#F5F5F5]"> <!--Gallery cards-->
+        <div class="m-10 flex flex-col gap-y-3 rounded  p-3 bg-[#FFFFFF] h-[490px] w-[986px] " dir="rtl">
+         <h2 class="w-[241px] h-[36px]  not-italic font-bold text-[20px] leading-[36p.4px] m-5"> لیست آخرین گالری شما</h2>
+<div class="flex flex-col gap-3">
+  <div>
+    <div class="grid grid-cols-6 gap-1 ml-2 mr-3">
+      <img src="/src/assets/images/pages/ui/Gallery-one.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-two.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-three.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-four.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-five.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-six.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-one.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-two.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-three.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-seven.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-eight.png" alt="Gallery picture">
+      <img src="/src/assets/images/pages/ui/Gallery-nine.png" alt="Gallery picture">
+    </div>
+    <div class="grid grid-cols  ">
+      <div class="flex flex-col items-center relative ">
+        <button type="submit" class="  w-[922px] h-[59px] bg-[#F5F8FC]  absolute right-6 top-8 mb-[30px]">
+          <span class="w-[163px] h-[25px] mt-[10px] font-semibold text-[18px] leading-[25.2px] text-[#00ADB5] text-center ">افزودن عکس به گالری</span>
+        </button>
+        <img class=" w-[24] h-[24] absolute top-12 right-80 mr-[55px] mt-[2px] " src="/src/assets/images/pages/ui/Cloud_Add.png"   alt="profile-image">
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+       </div>
+
+   </div>
+    </div>
+
+    {{> footer}}
+    <script type="module" src="../assets/js/main.js"></script>
+  </body>
+</html>
