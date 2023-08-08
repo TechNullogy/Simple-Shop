@@ -45,13 +45,8 @@
         <section class="flex items-center justify-center gap-4">
           <a
             href="#?"
-            class="relative z-10 flex items-center justify-center gap-3 bg-bondi-blue px-5 py-5.5 text-link-water"
+            class="z-10 flex items-center justify-center gap-3 bg-bondi-blue bg-line-pattern px-5 py-5.5 text-link-water"
           >
-            <img
-              src="/src/assets/images/home/bg-design4.png"
-              alt=""
-              class="absolute top-0 z-20 h-full w-full bg-cover bg-center"
-            />
             <p class="text-lg font-bold">چاپ آنلاین عکس</p>
             <svg
               width="24"
@@ -78,13 +73,16 @@
               />
             </svg>
           </a>
-          <a href="#?" class="relative text-lynch">
+          <a
+            href="#?"
+            class="flex items-center justify-center gap-2 bg-link-water px-[22.5px] py-5 text-lynch"
+          >
             <img
               src="/src/assets/images/icons/user-circle.png"
               alt="آیکون کاربر"
-              class="absolute right-4 top-1/3 w-[25px]"
+              class="w-[25px]"
             />
-            <p class="bg-link-water py-5.5 pl-5 pr-[45px]">ورود و ثبت نام</p>
+            <p class="">ورود و ثبت نام</p>
           </a>
           <a
             href="#?"
@@ -121,15 +119,15 @@
             </svg>
 
             <span
-              class="bg-light-blue absolute -bottom-3 -right-3 flex h-[27px] w-[27px] items-center justify-center rounded-full text-lg text-[#fff]"
+              class="absolute -bottom-3 -right-3 flex w-[27px] items-center justify-center rounded-full bg-bondi-blue text-lg text-[#fff]"
               >۲</span
             >
           </a>
         </section>
       </section>
-      <hr class="mx-auto h-px max-w-7xl rounded border-0 bg-mystic mt-[35px]" />
+      <hr class="mx-auto mt-[35px] h-px max-w-7xl rounded border-0 bg-mystic" />
 
-      <na
+      <nav
         class="mx-auto flex w-full max-w-7xl items-center justify-between gap-10"
       >
         <section class="flex items-center justify-center gap-[50px]">
@@ -224,13 +222,8 @@
 
             <a
               href="#?"
-              class="relative z-10 flex items-center justify-center gap-3 bg-bondi-blue px-5 py-5.5 text-link-water"
+              class="z-10 flex items-center justify-center gap-3 bg-bondi-blue bg-line-pattern px-5 py-5.5 text-link-water"
             >
-              <img
-                src="/src/assets/images/home/bg-design4.png"
-                alt=""
-                class="absolute top-0 z-20 h-full w-full bg-cover bg-center"
-              />
               <p class="text-lg font-bold">چاپ آنلاین عکس</p>
               <svg
                 width="24"
@@ -269,13 +262,15 @@
 
       <!-- services section -->
       <section class="mx-auto mb-20 max-w-7xl">
-        <div class="relative flex items-center justify-center">
-          <img
-            src="/src/assets/images/home/oranges.png"
-            alt=""
-            class="absolute -top-[30%] right-[39%] w-[35px]"
-          />
-          <h3 class="text-5xl font-bold">خدمات ما</h3>
+        <div class="flex items-center justify-center">
+          <div class="relative py-8">
+            <img
+              src="/src/assets/images/home/oranges.png"
+              alt=""
+              class="absolute right-0 top-0 w-[35px] translate-x-full"
+            />
+            <h3 class="text-5xl font-bold">خدمات ما</h3>
+          </div>
         </div>
         <div class="mt-8 flex items-center justify-center gap-2">
           <img
@@ -302,14 +297,14 @@
             class="absolute -right-[4%] -top-[33%] -z-10 w-[103px]"
           />
           <div
-            class="group relative flex cursor-pointer items-center bg-gradient-to-r from-link-water from-60% via-transparent to-mystic bg-[55px] transition-all duration-300 ease-in-out hover:bg-[0px]"
+            class="group relative grid cursor-pointer grid-cols-serviceCard bg-gradient-to-r from-link-water from-60% via-transparent to-link-water bg-[50px] transition-all duration-300 ease-in-out hover:bg-[15px]"
           >
             <img
               src="/src/assets/images/home/painting1.png"
               alt="عکس نقاشی"
-              class="-z-10"
+              class="-z-10 h-full object-cover"
             />
-            <div class="flex translate-x-16 flex-col gap-4">
+            <div class="flex flex-col gap-4 py-[27px]">
               <h5 class="whitespace-nowrap text-xl font-bold text-black-pearl">
                 چاپ آنلاین عکس
               </h5>
@@ -322,7 +317,7 @@
             </div>
             <a
               href="#?"
-              class="flex translate-x-3 items-center justify-center bg-mystic px-[10.5px] py-[69.5px] transition-all duration-300 ease-in-out group-hover:bg-bondi-blue"
+              class="my-3 flex items-center justify-center justify-self-center bg-mystic px-[10.5px] py-[69.5px] transition-all duration-300 ease-in-out group-hover:bg-bondi-blue"
             >
               <svg
                 width="15"
@@ -353,16 +348,16 @@
             </a>
           </div>
           <div
-            class="group relative flex cursor-pointer items-center bg-gradient-to-r from-link-water from-60% via-transparent to-mystic bg-[55px] transition-all duration-300 ease-in-out hover:bg-[0px]"
+            class="group relative grid cursor-pointer grid-cols-serviceCard bg-gradient-to-r from-link-water from-60% via-transparent to-link-water bg-[50px] transition-all duration-300 ease-in-out hover:bg-[15px]"
           >
             <img
               src="/src/assets/images/home/painting1.png"
               alt="عکس نقاشی"
-              class="-z-10"
+              class="-z-10 h-full object-cover"
             />
-            <div class="flex translate-x-16 flex-col gap-4">
+            <div class="flex flex-col gap-4 py-[27px]">
               <h5 class="whitespace-nowrap text-xl font-bold text-black-pearl">
-                چاپ عکس‌های فانتزی
+                چاپ عکس های فانتزی
               </h5>
               <p class="text-[10px] leading-[22px] text-lynch">
                 در عکسخونه؛ چاپ عکس با بالاترین سطح کیفی با دستگاه‌های بروز و
@@ -373,7 +368,7 @@
             </div>
             <a
               href="#?"
-              class="flex translate-x-3 items-center justify-center bg-mystic px-[10.5px] py-[69.5px] transition-all duration-300 ease-in-out group-hover:bg-bondi-blue"
+              class="my-3 flex items-center justify-center justify-self-center bg-mystic px-[10.5px] py-[69.5px] transition-all duration-300 ease-in-out group-hover:bg-bondi-blue"
             >
               <svg
                 width="15"
@@ -404,16 +399,16 @@
             </a>
           </div>
           <div
-            class="group relative flex cursor-pointer items-center bg-gradient-to-r from-link-water from-60% via-transparent to-mystic bg-[55px] transition-all duration-300 ease-in-out hover:bg-[0px]"
+            class="group relative grid cursor-pointer grid-cols-serviceCard bg-gradient-to-r from-link-water from-60% via-transparent to-link-water bg-[50px] transition-all duration-300 ease-in-out hover:bg-[15px]"
           >
             <img
               src="/src/assets/images/home/painting2.png"
               alt="عکس نقاشی"
-              class="-z-10"
+              class="-z-10 h-full object-cover"
             />
-            <div class="flex translate-x-16 flex-col gap-4">
+            <div class="flex flex-col gap-4 py-[27px]">
               <h5 class="whitespace-nowrap text-xl font-bold text-black-pearl">
-                قاب و آلبوم
+                چاپ عکس های فانتزی
               </h5>
               <p class="text-[10px] leading-[22px] text-lynch">
                 در عکسخونه؛ چاپ عکس با بالاترین سطح کیفی با دستگاه‌های بروز و
@@ -424,7 +419,7 @@
             </div>
             <a
               href="#?"
-              class="flex translate-x-3 items-center justify-center bg-mystic px-[10.5px] py-[69.5px] transition-all duration-300 ease-in-out group-hover:bg-bondi-blue"
+              class="my-3 flex items-center justify-center justify-self-center bg-mystic px-[10.5px] py-[69.5px] transition-all duration-300 ease-in-out group-hover:bg-bondi-blue"
             >
               <svg
                 width="15"
@@ -556,11 +551,6 @@
 
       <!-- app intro -->
       <section class="mb-20 overflow-hidden bg-pigeon-post bg-opacity-[16%]">
-        <img
-          src="/src/assets/images/home/bg-design2.png"
-          alt=""
-          class="absolute bg-cover bg-center"
-        />
         <div
           class="relative z-10 mx-auto grid max-w-7xl grid-cols-2 items-center justify-between py-6"
         >
@@ -568,17 +558,11 @@
             <img
               src="/src/assets/images/home/pages.png"
               alt="صفحات اپ موبایل"
-              class="w-[600px] object-none object-center"
+              class="w-[600px] object-center"
             />
             <div
-              class="absolute left-[13%] top-[10%] -z-10 h-[517px] w-[517px] overflow-hidden rounded-full bg-bondi-blue"
-            >
-              <img
-                src="/src/assets/images/home/bg-design3.png"
-                alt=""
-                class=""
-              />
-            </div>
+              class="absolute left-[13%] top-[10%] -z-10 h-[517px] w-[517px] overflow-hidden rounded-full bg-bondi-blue bg-[url('/src/assets/images/home/bg-design3.png')]"
+            ></div>
             <img
               src="/src/assets/images/home/shape-curly2.png"
               alt=""
@@ -772,12 +756,9 @@
       <!-- lovely section -->
 
       <!-- childish section -->
-      <section class="relative mb-20 bg-link-water">
-        <img
-          src="/src/assets/images/home/bg-design1.png"
-          alt=""
-          class="absolute bg-cover bg-center"
-        />
+      <section
+        class="relative mb-20 bg-link-water bg-[url('/src/assets/images/home/bg-design1.png')]"
+      >
         <div class="relative z-10 mx-auto mb-20 max-w-7xl py-6">
           <div class="flex items-center justify-between">
             <div class="flex items-center justify-center gap-3">
@@ -1004,15 +985,17 @@
             alt=""
             class="absolute -left-[3%] -top-[3%]"
           />
-          <div class="relative flex items-center justify-center">
-            <img
-              src="/src/assets/images/home/shape-curly3.png"
-              alt=""
-              class="absolute -top-[80%] right-[25%]"
-            />
-            <h3 class="text-5xl text-black">
-              <span class="text-amaranth">پلن‌های </span>پیشنهادی عکسخونه
-            </h3>
+          <div class="flex items-center justify-center">
+            <div class="relative py-10">
+              <img
+                src="/src/assets/images/home/shape-curly3.png"
+                alt=""
+                class="absolute right-0 top-0 translate-x-1/2"
+              />
+              <h3 class="text-5xl text-black">
+                <span class="text-amaranth">پلن‌های </span>پیشنهادی عکسخونه
+              </h3>
+            </div>
           </div>
           <div class="mt-8 flex items-center justify-center gap-2">
             <img
@@ -1561,13 +1544,15 @@
 
       <!-- features section -->
       <section class="mx-auto mb-20 max-w-7xl py-24">
-        <div class="relative flex items-center justify-center">
-          <img
-            src="/src/assets/images/home/blues.png"
-            alt=""
-            class="absolute -top-[15%] right-[38%] w-[25px]"
-          />
-          <h3 class="text-5xl font-bold">چرا عکسخونه؟</h3>
+        <div class="flex items-center justify-center">
+          <div class="relative py-8">
+            <img
+              src="/src/assets/images/home/blues.png"
+              alt=""
+              class="right-0 top-0 translate-x-1/2 translate-y-2/4"
+            />
+            <h3 class="text-5xl font-bold">چرا عکسخونه؟</h3>
+          </div>
         </div>
         <div class="mt-8 flex items-center justify-center gap-2">
           <img
@@ -1743,29 +1728,22 @@
               </svg>
             </a>
           </div>
-          <div class="relative z-30 flex items-center justify-center">
+          <div
+            class="relative z-30 flex h-[605px] w-1/2 items-center justify-center bg-[url('/src/assets/images/flower.png')] bg-cover bg-center bg-no-repeat"
+          >
             <div
-              class="absolute left-0 top-0 h-full w-full bg-black-pearl bg-opacity-40"
+              class="absolute left-0 top-0 z-10 h-full w-full bg-black-pearl bg-opacity-40"
             ></div>
-            <img
-              src="/src/assets/images/flower.png"
-              alt="عکس گل"
-              class="h-[605px] object-fill object-center"
-            />
-            <div class="flex items-center justify-center">
+            <div
+              class="relative z-20 block rounded-full border border-white border-opacity-50 p-12"
+            >
               <img
                 src="/src/assets/images/icons/play.png"
                 alt="آیکون پخش"
-                class="absolute left-[45.5%] z-30 -translate-x-0.5 translate-y-0.5"
+                class="rounded-full bg-white p-4 outline outline-offset-[18px] outline-white"
               />
               <div
-                class="absolute left-[41%] z-20 h-[83px] w-[83px] -translate-x-0.5 translate-y-0.5 rounded-full bg-white outline outline-offset-[18px] outline-white"
-              ></div>
-              <div
-                class="absolute left-[40%] z-10 h-24 w-24 -translate-x-0.5 translate-y-0.5 rounded-full bg-white bg-opacity-30 backdrop-blur-[42px]"
-              ></div>
-              <div
-                class="absolute left-[36%] z-10 h-[138px] w-[138px] -translate-x-0.5 translate-y-0.5 rounded-full border border-white border-opacity-20"
+                class="absolute left-1/4 top-1/4 -z-10 h-1/2 w-1/2 rounded-full bg-white bg-opacity-20 p-9"
               ></div>
             </div>
           </div>

@@ -28,6 +28,12 @@ export default {
         5.5: "1.313rem",
         7.5: "1.813rem",
       },
+      backgroundImage: {
+        "line-pattern": "url(/src/assets/images/home/bg-design4.png)",
+      },
+      gridTemplateColumns: {
+        serviceCard: "35% 50% 15%",
+      },
     },
   },
   plugins: [],
