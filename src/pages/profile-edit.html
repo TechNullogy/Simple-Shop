@@ -31,7 +31,14 @@
           <div class="grid grid-cols-2 gap-x-6">
             <div class="flex flex-col gap-2">
               <label class="leading-[16 .8px] text-xs font-light text-[#7E8AAB]">استان</label>
-              <input  type="text" class="bg-[#F7F9FC] p-3 text-right" placeholder="انتخاب کنید" />
+              <select name="counties" class="bg-[#F7F9FC] p-3 text-[#9ea3b3]" required>
+                <option value="" disabled selected hidden >انتخاب کنید</option>
+                <option value="Tehran" class="text-[#7a7f8d]">Tehran</option>
+                <option value="Alborz" class="text-[#7a7f8d]">Alborz</option> 
+                <option value="Gilan" class="text-[#7a7f8d]">Gilan</option> 
+                <option value="Mazandaran" class="text-[#7a7f8d]">Mazandaran</option>    
+             
+              </select>
             </div>
             <div class="flex flex-col gap-2">
               <label class="text-[12px] font-light not-italic text-[#7E8AAB]">شهر</label>
