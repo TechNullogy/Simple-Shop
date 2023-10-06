@@ -1,17 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="fa">
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Shbnam font -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
+
+    <!-- Apply shabnam font -->
+    <style>
+        body {
+            font-family: 'Shabnam', sans-serif;
+        }
+    </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>جزئیات محصول</title>
-  </head>
-  <body>
+</head>
+<body dir="rtl" class="overflow-x-hidden">
+    
     {{> header}}
 
-    <div>محتوای صفحه</div>
+    <!-- container -->
+    <div class="px-[30px]">
+
+        <!-- navigations -->
+        <ul class="flex justify-start text-[#7E8AAB] text-[17px] px-[30px] py-[39px]">
+            <li class="p-0 m-0 flex items-center">
+                صفحه اصلی
+                <img src="./../assets/images/icons/arrow-left.png" alt="Arrow Icon" class="w-[5.83px] h-[11.67px] mx-[14px]">
+            </li>
+            <li class="p-0 m-0 flex items-center">
+                محصولات
+                <img src="./../assets/images/icons/arrow-left.png" alt="Arrow Icon" class="w-[5.83px] h-[11.67px] mx-[14px]">
+            </li>
+            <li class="p-0 m-0 flex items-center">
+                <a href="#" class="decoration-none text-[#050F2C]">
+                    قاب عکس
+                </a>
+            </li>
+        </ul>
+        <!-- ./navigations -->
+
+        <!-- top info box -->
+        <div class="flex flex-nowrap justify-between">
+            <!-- image carousel -->
+            <div class="flex flex-col basis-4/12 pr-[30px] pl-[18px]">
+                
+                <div class="relative">
+                    <img src="./../assets/images/pages/single-product/product-image.png" alt="Product Image" class="w-full">
+                    
+                    <!-- image actions -->
+                    <ul class="flex p-0 m-0 absolute top-[20px] right-[20px]">
+                        <li class="bg-white ml-3 w-[51px] h-[51px] relative">
+                            <img src="./../assets/images/icons/heart.png" alt="Like Icon" class="absolute top-[15px] left-[14px]">
+                        </li>
+                        <li class="bg-white ml-3 w-[51px] h-[51px] relative">
+                            <img src="./../assets/images/icons/share.png" alt="Share Icon" class="w-[28px] h-[28px] absolute top-[12px] left-[12px]">
+                        </li>
+                    </ul>
+                    <!-- ./image actions -->
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute bg-gradient-to-l from-[white] to-[transparent] w-40 h-24 right-0 bottom-0">
+                        <img src="./../assets/images/icons/arrow-left-circle.png" alt="Arrow Icon" class="absolute top-[30px] right-5 w-[44px] h-[44px] rotate-180">
+                    </div>
+                    <ul class="flex gap-3 items-end overflow-x-hidden pt-[30px]">
+                        <li class="basis-1/6"><img src="../assets/images/pages/single-product/product-image-3.png" alt=""></li>
+                        <li class="basis-1/6"><img src="../assets/images/pages/single-product/product-image-2.png" alt=""></li>
+                        <li class="basis-1/4"><img src="../assets/images/pages/single-product/product-image.png" alt=""></li>
+                        <li class="basis-1/6"><img src="../assets/images/pages/single-product/product-image-2.png" alt=""></li>
+                        <li class="basis-1/6"><img src="../assets/images/pages/single-product/product-image-3.png" alt=""></li>
+                    </ul>
+                    <div class="absolute bg-gradient-to-r from-[white] to-[transparent] w-40 h-24 left-0 bottom-0">
+                        <img src="./../assets/images/icons/arrow-left-circle.png" alt="Arrow Icon" class="absolute top-[30px] left-5 w-[44px] h-[44px]">
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./image carousel -->
+            
+            <!-- short info -->
+            <div class="flex flex-col basis-5/12 pr-[18px] pl-[18px]">
+                
+                <span class="text-[16px] text-[#7E8AAB] mb-[19px]">قاب عکس</span>
+                <h1 class="text-black text-[32px] font-bold m-0 p-0">قاب عکس ترنج سایز بزرگ</h1>
+                <div class="flex flex-row gap-1 text-lg justify-start mt-[29px]">
+                    <img src="./../assets/images/icons/mailbox.png" alt="Product Code Icon" class="w-[24px] h-[24px]">
+                    <span class="text-[#626E94]">کد کالا: </span>
+                    <span class="text-black">۲۴۹۵۷۸۲</span>
+                </div>
+                <div class="flex flex-row gap-1 text-lg justify-start mt-[18px]">
+                    <span class="text-black">برند:‌ </span>
+                    <a href="#" class="decoration-none text-[#1077FE]">برند کلاسیک دوان</a>
+                </div>
+
+                <hr class="bg-[#DEE2EEB2] mt-[22px]">
+
+                <h3 class="mt-[28px] text-[20px] text-black font-semibold">ویژگی‌ها: </h3>
+                <ul class="flex flex-col gap-[22px] m-0 p-0 mt-[21px] list-disc list-inside text-[#9CB0B9]">
+                    <li>
+                        <span>رنگ</span>
+                        <span class="text-black mr-4">صورتی، سبز، بنفش، آبی</span>
+                    </li>
+                    <li>
+                        <span>سایز</span>
+                        <span class="text-black mr-4">۲۰×۲۵، ۱۳×۱۸، ۱۰×۱۵</span>
+                    </li>
+                    <li>
+                        <span>جنس قاب</span>
+                        <span class="text-black mr-4">MDF</span>
+                    </li>
+                    <li>
+                        <span>جنس کاغذ</span>
+                        <span class="text-black mr-4">Glass</span>
+                    </li>
+                </ul>
+
+                <hr class="bg-[#DEE2EEB2] mt-[48px]">
+
+                <div class="flex flex-row gap-16 justify-start mt-[30px]">
+                    <div class="flex flex-col gap-4 items-center">
+                        <img src="./../assets/images/icons/support.png" alt="Support" class="h-[40px]">
+                        <span class="text-[#626E94] text-xs">
+                            پشتیبانی ۲۴ ساعته
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-4 items-center">
+                        <img src="./../assets/images/icons/badge.png" alt="Support" class="h-[40px]">
+                        <span class="text-[#626E94] text-xs">
+                            قیمت مناسب
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-4 items-center">
+                        <img src="./../assets/images/icons/shopping-bag.png" alt="Support" class="h-[40px]">
+                        <span class="text-[#626E94] text-xs">
+                            ارسال به تمام کشور
+                        </span>
+                    </div>
+                    <div class="flex flex-col gap-4 items-center">
+                        <img src="./../assets/images/icons/safe-money.png" alt="Support" class="h-[40px]">
+                        <span class="text-[#626E94] text-xs">
+                            بازگشت وجه
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- ./short info -->
+
+            <!-- purchase box -->
+            <div class="flex flex-col justify-between basis-3/12 bg-[#F5F8FC] p-8">
+
+                <!-- top -->
+                <div class="flex flex-col">
+                    <h3 class="text-[20px] text-black font-bold">انتخاب رنگ</h3>
+                    <div class="flex flex-row gap-3 mt-2 text-[#9CB0B9]">
+                        <button class="flex flex-row gap-2 justify-center items-center bg-white border py-3 px-4">
+                            <span class="rounded-full bg-blue-600 w-[15px] h-[15px] inline-block"></span> <span>آبی</span>
+                        </button>
+                        <button class="flex flex-row gap-2 justify-center items-center bg-white border py-3 px-4">
+                            <span class="rounded-full bg-lime-500 w-[15px] h-[15px] inline-block"></span> <span>سبز</span>
+                        </button>
+                        <button class="flex flex-row gap-2 justify-center items-center bg-white border border-blue-400 text-black py-3 px-4">
+                            <span class="rounded-full bg-white border w-[15px] h-[15px] inline-block relative">
+                                <img src="../assets/images/icons/tick.png" alt="Tick icon" class="absolute left-[2px] bottom-[2px]">
+                            </span> <span>سفید</span>
+                        </button>
+                    </div>
+
+                    <hr class="bg-[#DEE2EEB2] my-[30px]">
+
+                    <h3 class="text-[20px] text-black font-bold">انتخاب سایز</h3>
+                    <div class="flex flex-row gap-2 mt-2 text-black">
+                        <button class="flex flex-row gap-2 justify-center items-center bg-white border py-3 px-4">
+                            <span>۱۰×۱۵</span>
+                        </button>
+                        <button class="flex flex-row gap-2 border-blue-400 justify-center items-center bg-white border py-3 px-4">
+                            <span class="text-blue-400">۱۰×۱۵</span>
+                        </button>
+                        <button class="flex flex-row gap-2 justify-center items-center bg-white border py-3 px-4">
+                            <span>۱۰×۱۵</span>
+                        </button>
+                        <button class="flex flex-row gap-2 justify-center items-center bg-white border py-3 px-4">
+                            <span>۱۰×۱۵</span>
+                        </button>
+                    </div>
+
+                    <hr class="bg-[#DEE2EEB2] my-[30px]">
+
+                    <div class="flex flex-row justify-between items-center">
+                        <h3 class="text-[20px] text-black font-bold">تعداد</h3>
+                        <div class="bg-white relative">
+                            <input type="text" value="۳" class="outline-none p-4 pb-2 text-center text-lg inline-block w-36">
+                            <img src="./../assets/images/icons/circle-plus.png" alt="Plus" class="absolute top-[14px] right-3">
+                            <img src="./../assets/images/icons/circle-minus.png" alt="Minus" class="absolute top-[14px] left-3">
+                        </div>
+                    </div>
+                </div>
+                <!-- ./top -->
+                
+                <!-- bottom -->
+                <div class="flex flex-col">
+                    <hr class="bg-[#DEE2EEB2] mb-[30px]">
+
+                    <div class="flex flex-row justify-between items-center">
+                        <h3 class="text-[20px] text-black font-bold">قیمت:</h3>
+                        <span class="text-[#00ADB5] text-[20px] font-bold">
+                            ۲۰,۰۰۰ تومان
+                        </span>
+                    </div>
+
+                    <button class="flex flex-row justify-center items-center gap-2 bg-[#00ADB5] p-4 mt-[20px]">
+                        <img src="./../assets/images/icons/shopping-card.png" alt="Shop now icon">
+                        <span class="text-white">
+                            انتخاب عکس و ثبت سفارش
+                        </span>
+                    </button>
+                </div>
+                <!-- ./bottom -->
+
+            </div>
+            <!-- ./purchase box -->
+
+        </div>
+        <!-- ./top info box -->
+
+        <!-- description box -->
+        <div class="flex flex-wrap mt-[90px]">
+            
+            <!-- box title -->
+            <div class="flex basis-3/4 justify-start">
+                <img src="../assets/images/icons/octagon-question.png" alt="Question Icon" class="w-[44px] h-[44px]">
+                <h1 class="text-3xl pr-[13px]">در مورد محصول بیشتر بدانید</h1>
+            </div>
+            <!-- ./box title -->
+            
+            <!-- tab -->
+            <div class="flex basis-3/4 justify-start mt-[35px] border-b">
+                <button class="py-[19px] px-[14px] text-[20px] text-[#7E8AAB] border-b-[3px] border-b-transparent focus:text-[#00ADB5] focus:border-b-[#00ADB5] mr-5">مشخصات فیزیکی</button>
+                <button class="py-[19px] px-[14px] text-[20px] text-[#7E8AAB] border-b-[3px] border-b-transparent focus:text-[#00ADB5] focus:border-b-[#00ADB5]">توضیحات محصول</button>
+            </div>
+            <!-- ./tab -->
+
+            <!-- description -->
+            <div class="flex flex-col basis-3/4 justify-start mt-[37px]">
+                
+                <!-- title -->
+                <div class="flex justify-start items-center">
+                    <img src="../assets/images/icons/notebook.png" alt="Notebook Icon" class="w-[32px] h-[32px]">
+                    <h2 class="pr-2 text-[24px]">توضیحات محصول</h2>
+                </div>
+                <!-- ./title -->
+
+                <!-- content -->
+                <p class="p-0 mt-[14px] text-gray-500 text-[16px] leading-8">
+                    سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+                <!-- ./content -->
+
+                <!-- image gallery -->
+                <ul class="p-0 m-0 mt-[30px] flex flex-row justify-between items-center gap-4">
+                    <li>
+                        <img src="../assets/images/pages/single-product/product-image.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/pages/single-product/product-image.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/pages/single-product/product-image.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/pages/single-product/product-image.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/images/pages/single-product/product-image.png" alt="">
+                    </li>
+                </ul>
+                <!-- ./image gallery -->
+
+                <hr class="border-[#BFC4D580] my-[42px]">
+
+                <!-- details -->
+                <div class="flex flex-col basis-3/4 justify-start">
+                    
+                    <!-- title -->
+                    <div class="flex justify-start items-center">
+                        <img src="../assets/images/icons/box.png" alt="Notebook Icon" class="w-[32px] h-[32px]">
+                        <h2 class="pr-2 text-[24px]">ویژگی‌های محصول</h2>
+                    </div>
+                    <!-- ./title -->
+
+                    <!-- attributes -->
+                    <ul class="list-disc list-inside mt-[30px]">
+                        <li class="flex justify-start border-b py-[26px] pt-0">
+                            <div class="basis-1/4 text-gray-500">▪ رنگ</div>
+                            <div>صورتی، سبز، بنفش، آبی</div>
+                        </li>
+                        <li class="flex justify-start border-b py-[26px]">
+                            <div class="basis-1/4 text-gray-500">▪ سایز</div>
+                            <div>20×25, 13×18, 10×15</div>
+                        </li>
+                        <li class="flex justify-start py-[26px] pb-0">
+                            <div class="basis-1/4 text-gray-500">▪ جنس قاب</div>
+                            <div>MDF</div>
+                        </li>
+                    </ul>
+                    <!-- ./attributes -->
+
+                </div>
+                <!-- ./details -->
+
+            </div>
+            <!-- ./description -->
+
+        </div>
+        <!-- ./description box -->
+
+        <!-- seperator -->
+        <div class="h-2 bg-[#E5E8EF] mt-[42px] -mx-8"></div>
+        <!-- ./seperator -->
+
+        <!-- carousel -->
+        <!-- head -->
+        <div class="flex justify-between items-center my-[57px]">
+            
+            <!-- title -->
+            <h1 class="text-[32px]">
+                محصولات مشابه
+            </h1>
+            <!-- ./title -->
+
+            <!-- action buttons -->
+            <div class="flex gap-2">
+                <div class="flex justify-center items-center h-[60px] w-[60px] bg-[#F5F8FC]">
+                    <img src="../assets/images/icons/arrow-right-line.svg" alt="Arrow Icon" class="opacity-60 rotate-180">
+                </div>
+                <div class="flex justify-center items-center h-[60px] w-[60px] bg-[#F5F8FC]">
+                    <img src="../assets/images/icons/arrow-right-line.svg" alt="Arrow Icon" class="fill-black">
+                </div>
+            </div>
+            <!-- ./action buttons -->
+
+        </div>
+        <!-- ./head -->
+        <!-- content -->
+        <div class="flex flex-nowrap justify-between items-center gap-4 mt-[34px] mb-[59px]">
+            <div class="basis-1/4">
+                <img src="../assets/images/pages/single-product/product-image.png" alt="Product Image">
+                <div class="mt-[14px] text-gray-500">قاب عکس</div>
+                <h3 class="mt-2 text-2xl">قاب عکس شیب دار</h3>
+                <div class="mt-[30px] text-xl text-[#00ADB5]">۲۴٬۰۰۰تومان - ۶۸٬۰۰۰ تومان</div>
+            </div>
+            <div class="basis-1/4">
+                <img src="../assets/images/pages/single-product/product-image.png" alt="Product Image">
+                <div class="mt-[14px] text-gray-500">قاب عکس</div>
+                <h3 class="mt-2 text-2xl">قاب عکس شیب دار</h3>
+                <div class="mt-[30px] text-xl text-[#00ADB5]">۲۴٬۰۰۰تومان - ۶۸٬۰۰۰ تومان</div>
+            </div>
+            <div class="basis-1/4">
+                <img src="../assets/images/pages/single-product/product-image.png" alt="Product Image">
+                <div class="mt-[14px] text-gray-500">قاب عکس</div>
+                <h3 class="mt-2 text-2xl">قاب عکس شیب دار</h3>
+                <div class="mt-[30px] text-xl text-[#00ADB5]">۲۴٬۰۰۰تومان - ۶۸٬۰۰۰ تومان</div>
+            </div>
+            <div class="basis-1/4">
+                <img src="../assets/images/pages/single-product/product-image.png" alt="Product Image">
+                <div class="mt-[14px] text-gray-500">قاب عکس</div>
+                <h3 class="mt-2 text-2xl">قاب عکس شیب دار</h3>
+                <div class="mt-[30px] text-xl text-[#00ADB5]">۲۴٬۰۰۰تومان - ۶۸٬۰۰۰ تومان</div>
+            </div>
+        </div>
+        <!-- ./content -->
+        <!-- ./carousel -->
+
+    </div>
+    <!-- ./container -->
 
     {{> footer}}
+
     <script type="module" src="../assets/js/main.js"></script>
-  </body>
+</body>
 </html>
